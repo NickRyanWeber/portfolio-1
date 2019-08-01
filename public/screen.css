@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
 :root {
   font: 16px / 1 sans-serif;
 }
@@ -9,6 +10,8 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #3d3b3b;
 }
 
 /* Header */
@@ -17,7 +20,7 @@ body {
   background-image: url(./images/space.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  padding: 5rem;
+  /* padding: 5rem; */
 }
 
 .profile-img {
@@ -29,24 +32,60 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin: 5rem;
+  padding: 17rem;
 }
 
 .project-thumbnail-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   list-style: none;
+  background-color: #222121c0;
+  padding: 3rem;
+  margin-bottom: 0;
+}
+
+.project-thumbnail {
+  height: 20rem;
 }
 
 .quote-bubble {
-  background-color: #faebd7d5;
-  /* margin: 2rem; */
-  /* padding: 3rem; */
+  background-color: #fffbf7d5;
+  border-radius: 0.75rem;
+  margin: 0 2rem;
+  padding: 2rem 3rem;
+  position: relative;
+}
+
+.quote-bubble::after {
+  content: '';
+  position: absolute;
+  border-width: 3em;
+  border-style: solid;
+  border-left-color: #fffbf7d5;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  transform: rotate(225deg);
+  bottom: -54px;
+  left: 1rem;
 }
 
 .header-img-and-quote > div {
-  border: 3px solid #dd0327;
   flex: 1;
+  padding: 0 9rem 0 0;
+  margin: -3rem 0 0 0;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 1rem 0;
 }
 
 /* Project Area */
