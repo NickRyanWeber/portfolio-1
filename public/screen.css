@@ -12,6 +12,7 @@ body {
   min-height: 100%;
   font-family: 'Roboto', sans-serif;
   color: #3d3b3b;
+  background-color: rgb(20, 20, 20);
 }
 
 /* Header */
@@ -90,6 +91,39 @@ h3 {
 
 /* Project Area */
 
-main {
-  background-color: lightblue;
+article {
+  border: 2px solid red;
+  border-radius: 2rem;
+  margin: 3rem;
+  padding: 3rem;
+  background-color: #f7faff;
+}
+
+.article-meta-data {
+  display: flex;
+  align-content: flex-end;
+}
+
+.article-meta-data > h4,
+.article-meta-data > p {
+  margin: 0;
+  padding: 0;
+  vertical-align: text-bottom;
+  border: 2px solid red;
+  align-self: flex-end;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+.date {
+  font-size: 1em;
+}
+
+a.keep-reading-btn {
+  padding: 3rem;
+  background: rgb(42, 42, 197);
+  color: #f7faff;
+  float: right;
 }
