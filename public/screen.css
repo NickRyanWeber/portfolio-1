@@ -147,7 +147,7 @@ h4 {
   font-weight: 300;
 }
 
-a.keep-reading-btn {
+.keep-reading-btn {
   padding: 1rem;
   background: #1d6bcb;
   color: #e5f0f9;
@@ -165,4 +165,51 @@ a.keep-reading-btn {
 
 .article-preview {
   font-size: 2rem;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-flow: wrap; */
+  list-style: none;
+  padding: 0;
+}
+
+#social-icons > li {
+  margin: 1rem;
+}
+
+footer > h2,
+footer > p {
+  color: #f1ecec;
+}
+
+footer > h2 {
+  font-size: 4rem;
+}
+
+footer > p {
+  font-size: 2rem;
+  margin: 7rem auto 2rem auto;
+}
+
+.social-icon {
+  font-size: 10rem;
+}
+
+.fa-twitter {
+  color: white;
+  background-color: #1d6bcb;
+  padding: 1.5rem;
+  border-radius: 50%;
 }
