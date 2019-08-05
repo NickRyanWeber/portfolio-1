@@ -1,3 +1,14 @@
+/********* TABLE OF CONTENTS *********/
+
+/* Global */
+/* Header */
+/* Main */
+/* Footer */
+
+/* Media Queries */
+
+/* START!!! */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700,900&display=swap');
 
 :root {
@@ -32,7 +43,7 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 10rem 10rem 7rem 10rem;  
+  padding: 10rem 10rem 7rem 10rem;
 }
 
 .profile-img {
@@ -44,7 +55,6 @@ body {
   flex: 1;
   /* padding: 0 9rem 0 0; */
   margin: -3rem 0 0 0;
-  
 }
 
 .quote-bubble {
@@ -72,7 +82,7 @@ body {
 h1 {
   font-size: 3rem;
   font-weight: bold;
-  margin: 0;  
+  margin: 0;
 }
 
 h3 {
@@ -87,7 +97,7 @@ h3 {
   flex-flow: wrap;
   list-style: none;
   background-color: #222121d5;
-  padding: 3rem;
+  padding: 3rem 0;
   margin-bottom: 0;
 }
 
@@ -98,7 +108,7 @@ h3 {
 /* Project Area */
 
 article {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin: 3rem;
   background-color: #f7faff;
   position: relative;
@@ -166,7 +176,7 @@ h4 {
   position: absolute;
   right: 1rem;
   bottom: -1.5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -203,7 +213,7 @@ footer > h2 {
 }
 
 .social-icon {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .fa-twitter {
@@ -218,7 +228,35 @@ footer > p {
   margin: 7rem auto 2rem auto;
 }
 
-@media (max-width: 500px) {
-  .profile-img {
-    border: 10px solid red;
+/* Media Queries */
+
+/* (min-width: 1000px) and  */
+@media (max-width: 1300px) {
+  /* Header */
+
+  .project-thumbnail {
+    height: 10rem;
   }
+
+  .profile-img {
+    height: 13rem;
+  }
+
+  .quote-bubble {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 999px) {
+  .profile-img {
+    border: 5px solid red;
+  }
+}
