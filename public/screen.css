@@ -203,7 +203,7 @@ footer > h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex-flow: wrap; */
+  flex-flow: wrap;
   list-style: none;
   padding: 0;
 }
@@ -230,9 +230,8 @@ footer > p {
 
 /* Media Queries */
 
-/* (min-width: 1000px) and  */
-@media (max-width: 1300px) {
-  /* Header */
+@media (min-width: 1000px) and (max-width: 1300px) {
+  /**** Header ****/
 
   .project-thumbnail {
     height: 10rem;
@@ -255,8 +254,62 @@ footer > p {
   }
 }
 
-@media (max-width: 999px) {
+@media (min-width: 650px) and (max-width: 999px) {
+  /**** Header ****/
+
+  .header-img-and-quote {
+    padding: 5rem 5rem 3rem 5rem;
+  }
+
+  .project-thumbnail {
+    height: 12rem;
+    margin: 1.5rem;
+    padding: 1rem 0;
+  }
+
   .profile-img {
-    border: 5px solid red;
+    height: 13rem;
+  }
+
+  .quote-bubble {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 649px) {
+  /**** Header ****/
+
+  .header-img-and-quote {
+    padding: 5rem 5rem 3rem 5rem;
+  }
+
+  .project-thumbnail {
+    height: 12rem;
+    margin: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .profile-img {
+    height: 13rem;
+  }
+
+  .quote-bubble {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
   }
 }
